@@ -15,12 +15,12 @@ notifications:
       - thedaviddias@gmail.com
 branches:
   only:
-    - master
-    - /^greenkeeper/.*$/
+    - develop
+    # - /^greenkeeper/.*$/
 deploy:
   local_dir: dist
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-    branch: master
+    branch: develop
