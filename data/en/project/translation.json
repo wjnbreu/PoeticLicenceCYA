@@ -1,0 +1,33 @@
+{
+  "SITE_NAME": "The Front-End Design Checklist",
+  "INDEX_TITLE": "💎 Your collaboration tool for Web Designers and Front-End Developers 💎",
+  "URL_WEBSITE": "https://frontenddesignchecklist.io",
+  "SITE_TAGLINE": "💎 The Design Checklist for Creative Web Designers and Patient Front-End Developers",
+  "SITE_DESCRIPTION": "💎 The Front-End DESIGN Checklist Application is perfect for creative Web Designers and patient Front-End Developers!",
+  "SITE_LANGUAGE": "en",
+  "SITE_DIRECTION": "ltr",
+  "URL_GITHUB_ROOT": "https://github.com/thedaviddias/Front-End-Design-Checklist",
+  "URL_GITHUB_REPO": "https://github.com/thedaviddias/Front-End-Design-Checklist/tree/gh-pages",
+  "alert": {
+    "JAVASCRIPT_DESACTIVATE": "Your JavaScript seems to be desactivate. Please enable your JavaScript to use all functionnalities of the Front-End Checklist."
+  },
+  "form": {
+    "LABEL_PROJECT_NAME": "Project Name",
+    "TITLE_PROJECT_NAME": "Type the name of your project",
+    "LABEL_PAGE_TITLE": "Page title or URL",
+    "TITLE_PAGE_TITLE": "Type the name of your page or URL",
+    "LABEL_DEVELOPER_NAME": "Web Designer or Creative Agency name",
+    "TITLE_DEVELOPER_NAME": "Type the Web Designer's name or the name of the creative agency",
+    "LABEL_SEARCH": "Search",
+    "BUTTON_START_NEW": "Start new checklist",
+    "BUTTON_GENERATE_PRINT": "Generate report"
+  },
+  "social": {
+    "TWEET": "Tweet",
+    "TWITTER_MSG": "Check the new 💎 Front-End DESIGN Checklist Application 💎 for creative Web Designers and patient Front-End Developers! Finally, a tool to help both Web Designers and Developers to work better together!",
+    "TWITTER_VIA": "thedaviddias",
+    "TWITTER_HASHTAGS": "FrontEndDesignChecklist #FrontEnd #Tool #Web #WebDesign",
+    "STAR": "Star",
+    "GITHUB_STAR_MSG": "Star thedaviddias/Front-End-Design-Checklist on GitHub"
+  }
+}
