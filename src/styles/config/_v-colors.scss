@@ -30,7 +30,7 @@ $colors: ('white': ($white, $black), 'black': ($black, $white), 'light': ($light
 
 $shades: ('black-bis': map-get($colors, black-bis), 'black-ter': map-get($colors, black-ter), 'grey-darker': map-get($colors, grey-darker), 'grey-dark': map-get($colors, grey-dark), 'grey': map-get($colors, grey), 'grey-light': map-get($colors, grey-light), 'grey-lighter': map-get($colors, grey-lighter), 'white-ter': map-get($colors, white-ter), 'white-bis': map-get($colors, white-bis)) !default;
 
-$primary: #4EAADE !default;
+$primary: #4eaade !default;
 $secondary: map-get($colors, blue) !default;
 
 $info: map-get($colors, blue) !default;
