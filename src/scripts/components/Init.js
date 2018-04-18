@@ -1,4 +1,3 @@
-import Filter from './Filter';
 import Dropdown from './Dropdown';
 import Storage from './Storage';
 import Checkboxes from './Checkboxes';
@@ -25,7 +24,7 @@ class Init {
 
     this.checkboxesInit();
     this.dropdownInit(this.sections);
-    this.filterInit();
+    // this.filterInit();
     this.itemsInit(this.sections);
     this.notationInit();
     this.toolsInit();
