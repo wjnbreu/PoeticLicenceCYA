@@ -23,13 +23,13 @@ class Init {
     this.main = document.getElementById('js-main');
 
     this.checkboxesInit();
-    this.dropdownInit(this.sections);
-    this.itemsInit(this.sections);
-    this.notationInit();
-    this.toolsInit();
-    this.reportInit();
-    this.uiInit();
-    this.AnalyticsInit();
+    // this.dropdownInit(this.sections);
+    // this.itemsInit(this.sections);
+    // this.notationInit();
+    // this.toolsInit();
+    // this.reportInit();
+    // this.uiInit();
+    // this.AnalyticsInit();
 
     return instance;
   }
