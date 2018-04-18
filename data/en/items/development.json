@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Development phase",
+    "content": [
+      {
+        "title": "Medias / Images",
+        "description": "All medias can be cut and saved before starting the development phase. That can help you to avoid back and forth between your creative software and your code editor."
+      },
+      {
+        "title": "Image folder architecture",
+        "description": "The image folder has a clear architecture where you  arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful."
+      },
+      {
+        "title": "Image naming convention",
+        "description": "A naming convention is used like adding prefixes to diferenciate types of images, all images used for background can be prefixed by `bg-`, icons by `icon-`, hero banners by `hero-` or `banner-` and so on."
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Paper Analysis",
+    "introduction": "It is recommended printing some (or all) of the pages you have on an A3 format (or A4 if you don’t have this format). Because of the height of the page. you’ll probably need to print some designs on multiple pages.",
+    "content": [
+      {
+        "title": "1. Structure of the pages",
+        "description": "Define the structure of the pages, the headers, the sections, the articles, main, footer outlining these on at least one printed page."
+      },
+      {
+        "title": "2. Define headings",
+        "description": "Find all the headings that structured a page, ensure the `H1` is not on the logo and that the logical order is followed. Most of the time, the H1 for the homepage will be hidden with CSS but needs to keep its legitimate meaning. That analysis should be done with the help of a SEO specialist in case you have one in your team."
+      },
+      {
+        "title": "3. Find similar components",
+        "description": "Try to find and regroup similar components giving them an individual name regarding their functionality and not just their context. For example, naming a tab system."
+      },
+      {
+        "title": "4. All layout elements can be done with CSS",
+        "description": "Most of the creative elements can today be done using CSS. Today, it is not recommended to create any layout element using images. Any simple graphical element like buttons or borders should be done in CSS to avoid performance or scalability issues."
+      },
+      {
+        "title": "5. Check lack of coherence",
+        "description": "Find some possible lack of coherence, in case a Styleguide was not provided by the creative team, it’s your responsibility to ensure that every graphic element belong to a possible category (Buttons, Typography, Sliders…). It’ll help you to create your own CSS / Sass architecture or to identify which component you’ll need from an identified CSS Framework."
+      }
+    ]
+  },
+  {
+    "name": "Pre-development phase",
+    "content": [
+      {
+        "title": "Plugins defined before start coding",
+        "description": "According to the specifications, plugins needed were defined in an early stage. Having a pre-list of possible plugins before starting the development can help the developer to stay focus and not spend too much time in doing research during the development phase. Obviously, some plugins may not perfectly fit and will be changed accordingly."
+      }
+
+    ],
+    "ressources": [
+      {
+        "title": "Awesome JS",
+        "url": "https://js.libhunt.com/"
+      },
+      {
+        "title": "BestOfJS",
+        "url": "https://bestof.js.org/"
+      }
+    ]
+  }
+]

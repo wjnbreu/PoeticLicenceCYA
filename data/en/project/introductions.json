@@ -1,8 +1,11 @@
 [{
-  "head": {
-    "introduction": ""
+  "design-requirements": {
+    "introduction": "Designing a website or a webapp requires following some rules and taking into consideration that the project is not only a graphic project but a web project too. The next sections are crucial for any web project."
   },
-  "html": {
-    "introduction": ""
+  "validation": {
+    "introduction": "The validation phase is when everything seems to be ready to be integrated. The client, in general, validate the creatives without waiting for any approval from the technical team. As exposed in the Design Checklist, it is essential that developers ensure the quality of the delivery before starting to code."
+  },
+  "before-production": {
+    "introduction": "Before launching your website, be sure to review all your pages using the Front-End Checklist."
   }
 }]

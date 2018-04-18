@@ -6,10 +6,14 @@
         "title": "Grid",
         "description": "A grid is explicitly provided in the design, and the details of the grid are present in the technical specification (width, gutters, number of columns…).",
         "detail": "The Web Designer can keep the grid in a transparent layer and use it on all his project.",
-        "documentation": [
+        "tools": [
           {
-            "title": "Enable / Disable JavaScript in Chrome Developer Tools",
-            "url": "https://www.youtube.com/watch?v=kBmvq2cE0D8"
+            "title": "Guide Guide | Photoshop plugin",
+            "url": "https://guideguide.me/"
+          },
+          {
+            "title": "Make Grid Tool | Sketch",
+            "url": "https://www.sketchapp.com/docs/canvas/rulers-guides-grids/"
           }
         ]
       },
@@ -25,7 +29,15 @@
     "ressources": [
       {
         "title": "Bootstrap Grid System (v4)",
-        "url": ""
+        "url": "https://getbootstrap.com/docs/4.0/layout/grid/"
+      },
+      {
+        "title": "Flexbox Grid",
+        "url": "http://flexboxgrid.com/"
+      },
+      {
+        "title": "Don't Overthink It Grids | CSS-Tricks",
+        "url": "https://css-tricks.com/dont-overthink-it-grids/"
       }
     ]
   },
