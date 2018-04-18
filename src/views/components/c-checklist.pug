@@ -15,7 +15,7 @@
 
       if section.name
 
-        section.c-checklist__subsection(data-subsection=section.name.toLowerCase().replace(/\s+/g, '-'))
+        section.c-checklist__subsection.js-subsection(data-subsection=section.name.toLowerCase().replace(/\s+/g, '-'))
 
           h3.s-checklist__subsection__title= section.name
 

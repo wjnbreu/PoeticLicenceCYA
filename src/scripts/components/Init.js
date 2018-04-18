@@ -20,11 +20,12 @@ class Init {
     }
 
     this.sections = document.querySelectorAll('.js-section');
+    this.subsections = document.querySelectorAll('.js-subsection');
     this.main = document.getElementById('js-main');
 
     this.checkboxesInit();
-    // this.dropdownInit(this.sections);
-    // this.itemsInit(this.sections);
+    this.dropdownInit(this.sections);
+    this.itemsInit(this.sections, this.subsections);
     // this.notationInit();
     // this.toolsInit();
     // this.reportInit();
@@ -48,7 +49,7 @@ class Init {
    *
    * @memberof Init
    */
-  itemsInit(sections) {
+  itemsInit(sections, subsections) {
     // Load all items by each section based on localStorage
     sections.forEach((section, i) => {
       new Storage().readItems(section, i, sections);
