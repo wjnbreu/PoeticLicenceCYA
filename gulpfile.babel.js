@@ -289,7 +289,7 @@ gulp.task('browser-sync', () => {
     },
 		notify: false,
     browser: true,
-    open: true
+    open: false
 	});
 });
 
