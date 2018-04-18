@@ -23,6 +23,7 @@ h1,
   padding: 15px 0 0;
   font-weight: 700;
   font-size: 2.5rem;
+  counter-reset: h2counter;
 
   @include mq('handheld-and-up') {
     font-size: 3rem;
@@ -37,6 +38,8 @@ h1,
 h2,
 .h2 {
   font-size: 2rem;
+  counter-increment: h2;
+  counter-reset: h3;
 }
 
 h3,
@@ -60,8 +63,8 @@ h4,
 }
 
 h3::before {
-  content: counter(h2counter) '.' counter(h3counter) '.\0000a0\0000a0';
-  counter-increment: h3counter;
+  counter-increment: h3;
+  content: counter(h2) '.' counter(h3) '.\0000a0\0000a0';
 }
 
 h3.no-count::before {

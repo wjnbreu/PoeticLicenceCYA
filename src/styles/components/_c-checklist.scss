@@ -203,6 +203,21 @@
         cursor: not-allowed;
       }
     }
+
+    &__subsection {
+      padding: 17px 0;
+    }
+
+    &__ressources {
+      &__list {
+        margin: 0;
+        padding: 0 0 0 20px;
+        list-style: circle;
+        li a {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
 

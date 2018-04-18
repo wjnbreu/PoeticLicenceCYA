@@ -1,59 +1,66 @@
 .c-checklist
 
   //- Grab introduction based on the name of the section
-  if introductions[0][sectionTitle.toLowerCase()]
+  if introductions[0][sectionTitle.toLowerCase().replace(/\s+/g, '-')]
 
-    each el in introductions[0][sectionTitle.toLowerCase()]
+    each el in introductions[0][sectionTitle.toLowerCase().replace(/\s+/g, '-')]
 
       p.c-checklist__intro= el
+
 
   //- List of all items elements based on the dataSection variable
   .c-checklist__section
 
     each section, i in dataSection
 
-      section
+      if section.name
 
-        h3= section.name
+        section.c-checklist__subsection(data-subsection=section.name.toLowerCase().replace(/\s+/g, '-'))
 
-        if section.introduction
-          p= section.introduction
+          h3.s-checklist__subsection__title= section.name
 
-        ul.c-checklist__list
+          if section.introduction
+            p= section.introduction
 
-          each item, i in section.content
+          if section.content
+            ul.c-checklist__list
 
-            include ../components/checklist/class
+              each item, i in section.content
 
-            //- data-item-check (false or true) => Element is checked or not
-            //- data-item-priority (high, medium or low) => The priority of the task
-            //- data-item-id (number) => the ID of the elements based on dataSection array
-            //- data-item-dropdown (open close or false) => State of the dropdown
-            //- data-item-visible (true or false) => Visibility of the item used by the tag filter
-            li.c-checklist__item.js-item(class=` ${allClass}`, data-item-priority=priorityClass ,data-item-id=i, data-item-check="false", data-item-dropdown=dataItemDropdown, data-item-visible="true" aria-hidden="false")
+                include ../components/checklist/class
 
-              .c-checklist__item__inner
+                //- data-item-check (false or true) => Element is checked or not
+                //- data-item-priority (high, medium or low) => The priority of the task
+                //- data-item-id (number) => the ID of the elements based on dataSection array
+                //- data-item-dropdown (open close or false) => State of the dropdown
+                //- data-item-visible (true or false) => Visibility of the item used by the tag filter
+                li.c-checklist__item.js-item(class=` ${allClass}`, data-item-priority=priorityClass ,data-item-id=i, data-item-check="false", data-item-dropdown=dataItemDropdown, data-item-visible="true" aria-hidden="false")
 
-                .c-checklist__body
+                  .c-checklist__item__inner
 
-                  //- Columns of the item
+                    .c-checklist__body
 
-                  //- Checkbox column
-                  include ../components/checklist/checkbox
+                      //- Columns of the item
 
-                  //- Label column
-                  include ../components/checklist/label
+                      //- Checkbox column
+                      include ../components/checklist/checkbox
 
-                  //- Dropdown column
-                  include ../components/checklist/dropdown
+                      //- Label column
+                      include ../components/checklist/label
 
-        if section.ressources
+                      //- Dropdown column
+                      include ../components/checklist/dropdown
 
-          .ccc
+            if section.ressources
 
-            ul
+              .c-checklist__ressources
 
-            each link in section.ressources
+                h4= translation.ADD_RESSOURCES
 
-              li
-                a(href=link.url)= link.title
+                ul.c-checklist__ressources__list
+
+                  each link in section.ressources
+
+                    li
+                      img.c-checklist__favicon(src="/img/icons/1x1.png" data-src=`https://www.google.com/s2/favicons?domain_url=${link.url}`, alt="")
+                      a(href=link.url)= link.title

@@ -12,8 +12,28 @@ block main
     if _items !== undefined
 
       +checklist-section({
-        dataSection: _items.designrequirements,
+        dataSection: _items.requirements,
         sectionTitle: "Design requirements"
+      })
+
+      +checklist-section({
+        dataSection: _items.analysis,
+        sectionTitle: "Analysis and pre-work phases"
+      })
+
+      +checklist-section({
+        dataSection: _items.validation,
+        sectionTitle: "Validation"
+      })
+
+      +checklist-section({
+        dataSection: _items.development,
+        sectionTitle: "Development phase"
+      })
+
+      +checklist-section({
+        dataSection: _items.production,
+        sectionTitle: "Before production"
       })
 
   include components/s-section-bottom

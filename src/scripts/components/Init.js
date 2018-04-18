@@ -24,7 +24,6 @@ class Init {
 
     this.checkboxesInit();
     this.dropdownInit(this.sections);
-    // this.filterInit();
     this.itemsInit(this.sections);
     this.notationInit();
     this.toolsInit();
