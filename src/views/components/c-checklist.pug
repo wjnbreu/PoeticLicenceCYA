@@ -8,30 +8,52 @@
       p.c-checklist__intro= el
 
   //- List of all items elements based on the dataSection variable
-  ul.c-checklist__list
+  .c-checklist__section
 
-    each item, i in dataSection
+    each section, i in dataSection
 
-      include ../components/checklist/class
+      section
 
-      //- data-item-check (false or true) => Element is checked or not
-      //- data-item-priority (high, medium or low) => The priority of the task
-      //- data-item-id (number) => the ID of the elements based on dataSection array
-      //- data-item-dropdown (open close or false) => State of the dropdown
-      //- data-item-visible (true or false) => Visibility of the item used by the tag filter
-      li.c-checklist__item.js-item(class=` ${allClass}`, data-item-priority=priorityClass ,data-item-id=i, data-item-check="false", data-item-dropdown=dataItemDropdown, data-item-visible="true" aria-hidden="false")
+        h3= section.name
 
-        .c-checklist__item__inner
+        if section.introduction
+          p= section.introduction
 
-          .c-checklist__body
+        ul.c-checklist__list
 
-            //- Columns of the item
+          each item, i in section.content
 
-            //- Checkbox column
-            include ../components/checklist/checkbox
+            include ../components/checklist/class
 
-            //- Label column
-            include ../components/checklist/label
+            //- data-item-check (false or true) => Element is checked or not
+            //- data-item-priority (high, medium or low) => The priority of the task
+            //- data-item-id (number) => the ID of the elements based on dataSection array
+            //- data-item-dropdown (open close or false) => State of the dropdown
+            //- data-item-visible (true or false) => Visibility of the item used by the tag filter
+            li.c-checklist__item.js-item(class=` ${allClass}`, data-item-priority=priorityClass ,data-item-id=i, data-item-check="false", data-item-dropdown=dataItemDropdown, data-item-visible="true" aria-hidden="false")
 
-            //- Dropdown column
-            include ../components/checklist/dropdown
+              .c-checklist__item__inner
+
+                .c-checklist__body
+
+                  //- Columns of the item
+
+                  //- Checkbox column
+                  include ../components/checklist/checkbox
+
+                  //- Label column
+                  include ../components/checklist/label
+
+                  //- Dropdown column
+                  include ../components/checklist/dropdown
+
+        if section.ressources
+
+          .ccc
+
+            ul
+
+            each link in section.ressources
+
+              li
+                a(href=link.url)= link.title
