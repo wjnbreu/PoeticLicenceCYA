@@ -305,7 +305,7 @@ gulp.task('cdn', () => {
   langs.forEach(lang => {
     return gulp.src(`./dist/index-${lang}.html`)
       .pipe(cdnizer({
-        defaultCDNBase: "//everywhere-8a59.kxcdn.com",
+        defaultCDNBase: "//frontenddesignchecklist.io",
         allowRev: true,
         files: [
           '/scripts/app.bundle.js',
